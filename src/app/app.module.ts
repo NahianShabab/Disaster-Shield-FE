@@ -13,13 +13,15 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from '@angular/material/list';
 import { CardComponent } from './components/missing/card/card.component';
 import { MissingListComponent } from './components/missing/missing-list/missing-list.component';
+import { MissingDetailsComponent } from './components/missing/missing-details/missing-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GuideComponent,
     CardComponent,
-    MissingListComponent
+    MissingListComponent,
+    MissingDetailsComponent
   ],
   imports: [
     BrowserModule,

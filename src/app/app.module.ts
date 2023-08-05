@@ -7,14 +7,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Components
 import { GuideComponent } from './components/guide/guide.component';
-
-// Angular Materials
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatListModule} from '@angular/material/list';
 import { CardComponent } from './components/missing/card/card.component';
 import { MissingListComponent } from './components/missing/missing-list/missing-list.component';
 import { MissingDetailsComponent } from './components/missing/missing-details/missing-details.component';
 import { CycloneMapComponent } from './components/cyclone/cyclone-map/cyclone-map.component';
+import { PostCardComponent } from './components/post/post-card/post-card.component';
+
+
+// Angular Materials
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatListModule} from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,14 +27,17 @@ import { CycloneMapComponent } from './components/cyclone/cyclone-map/cyclone-ma
     CardComponent,
     MissingListComponent,
     MissingDetailsComponent,
-    CycloneMapComponent
+    CycloneMapComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    MatListModule
+    MatListModule,
+    MatChipsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

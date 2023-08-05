@@ -1,0 +1,14 @@
+<div class="rootContainer">
+    <div class="header-container">
+        <h1 class="header">All Missing</h1>
+        <button class="btn btn-primary" (click)="openAddDialogue()"><i class="bi bi-plus-lg"></i></button>  
+    </div>
+    
+    <div class="row mb-2 background">
+        <div class="col-md-2" *ngFor="let missing of missing_persons">
+            <!-- <app-show-book [book]="book" (bookSelectEvent)="bookSelected(book)"></app-show-book> -->
+            <app-card [missing]="missing"></app-card>
+        </div>
+    </div>
+    
+</div>

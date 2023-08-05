@@ -11,11 +11,13 @@ import { GuideComponent } from './components/guide/guide.component';
 // Angular Materials
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from '@angular/material/list';
+import { CardComponent } from './components/missing/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GuideComponent
+    GuideComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

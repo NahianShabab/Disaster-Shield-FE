@@ -14,6 +14,7 @@ import {MatListModule} from '@angular/material/list';
 import { CardComponent } from './components/missing/card/card.component';
 import { MissingListComponent } from './components/missing/missing-list/missing-list.component';
 import { MissingDetailsComponent } from './components/missing/missing-details/missing-details.component';
+import { CycloneMapComponent } from './components/cyclone/cyclone-map/cyclone-map.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MissingDetailsComponent } from './components/missing/missing-details/mi
     GuideComponent,
     CardComponent,
     MissingListComponent,
-    MissingDetailsComponent
+    MissingDetailsComponent,
+    CycloneMapComponent
   ],
   imports: [
     BrowserModule,

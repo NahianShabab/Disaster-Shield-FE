@@ -12,4 +12,7 @@ export class CardComponent {
     console.log("clicked");
     
   }
+  getUrl():string{
+    return "https://randomuser.me/api/portraits/men/"+this.missing?.url.toString()+".jpg"
+  }
 }

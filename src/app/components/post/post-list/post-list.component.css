@@ -1,0 +1,10 @@
+/* Add CSS to center the list and add spacing between cards */
+.rootContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.post{
+    margin-bottom: 20px;
+}

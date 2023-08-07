@@ -1,29 +1,42 @@
-<div class="post" mat-elevation="3">
+
+  <div class="post mat-elevation-z3" style="width: 50%; margin: auto;">
+    <div class="poster-info">
+      <img class="poster-image" [src]="getUrl()" alt="Poster Image">
+      <p class="poster-name">{{ post.poster_name }}</p>
+    </div>
     <div class="post-header">
+
       <h2>{{ post.title }}</h2>
       <p class="post-date">{{ post.date | date }}</p>
+    </div>
+
+
+
+    <div class="post-tags">
+      <mat-chip *ngFor="let tag of post.tags">
+        {{tag}}
+      </mat-chip>
     </div>
     <div class="post-content">
       <p>{{ post.content }}</p>
     </div>
-    <!-- <div class="post-tags">
-      <mat-chip-list>
-        <mat-chip *ngFor="let tag of post.tags">{{ tag }}</mat-chip>
-      </mat-chip-list>
-    </div> -->
-    <div class="post-footer">
-      <button mat-icon-button color="primary" (click)="onComment()">
+    <div class="volunteer">
+    Volunteers: {{post.volunteerCollected}}/{{post.volunteerTotal}} <mat-progress-bar mode="determinate" [value]="getVol()"></mat-progress-bar>
+    </div>
+
+    <div class="post-footer" style="display: flex; justify-content: center; margin-top: 20px;">
+      <!-- Buttons as before -->
+      <button mat-raised-button color="primary" (click)="onComment()">
         <mat-icon>comment</mat-icon>
         <span class="button-label">Comment</span>
       </button>
-      <button mat-icon-button color="primary" (click)="onShare()">
+      <button mat-raised-button color="accent" (click)="onShare()" style="margin-left: 10px;">
         <mat-icon>share</mat-icon>
         <span class="button-label">Share</span>
       </button>
-      <button mat-icon-button color="warn" (click)="onReport()">
+      <button mat-raised-button color="warn" (click)="onReport()" style="margin-left: 10px;">
         <mat-icon>report</mat-icon>
         <span class="button-label">Report</span>
       </button>
     </div>
   </div>
-  

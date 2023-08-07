@@ -3,6 +3,9 @@ export interface Post {
     title: string;
     content: string;
     tags: string[];
-    date: Date;
+    date: number;
+    volunteerCollected:number;
+    volunteerTotal:number;
+    url:number
   }
   

@@ -19,6 +19,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
+import { PostListComponent } from './components/post/post-list/post-list.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     MissingListComponent,
     MissingDetailsComponent,
     CycloneMapComponent,
-    PostCardComponent
+    PostCardComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatTabsModule,
     MatListModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

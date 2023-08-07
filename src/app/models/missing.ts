@@ -1,4 +1,5 @@
 export interface MissingPerson{
     name:String,
-    age:number
+    age:number,
+    url:number
 }
